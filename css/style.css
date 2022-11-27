@@ -11,7 +11,7 @@ html {
 }
 a {
   text-decoration: none;
-  color: rgb(85, 158, 241);
+  color: rgb(251, 253, 255);
 }
 a:hover {
   color: rgb(0, 243, 81);
@@ -19,6 +19,7 @@ a:hover {
 .padre {
   display: flex;
   flex-flow: column nowrap;
+  background: #141621;
 }
 body {
   background: #141621;
@@ -102,6 +103,11 @@ img {
 .box h3 {
   padding-bottom: 10px;
 }
+.box img:hover {
+  background: white;
+  transition-property: background;
+  transition-duration: 1s;
+}
 
 .box-img {
   width: 270px;
@@ -182,7 +188,6 @@ img {
   padding-right: 15rem;
 }
 .cat ul a {
-  color: rgb(22, 8, 146);
   font-size: 2rem;
 }
 .cat li {
