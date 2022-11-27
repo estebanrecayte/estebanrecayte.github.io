@@ -13,7 +13,7 @@ a {
   text-decoration: none;
   color: rgb(85, 158, 241);
 }
-a:hover{
+a:hover {
   color: rgb(0, 243, 81);
 }
 .padre {
@@ -41,6 +41,8 @@ img {
   color: #172764;
   text-shadow: #e7eaf6 0.2em 0.2em 0.3em;
   text-align: justify;
+  animation: flash;
+  animation-duration: 10s;
 }
 .subtitulo {
   font-size: 4rem;
@@ -49,6 +51,8 @@ img {
   color: #e7eaf6;
   text-shadow: #172764 0.2em 0.2em 0.3em;
   text-align: justify;
+  animation: flash;
+  animation-duration: 10s;
 }
 .menu {
   text-align: center;
@@ -78,6 +82,8 @@ img {
   text-align: justify;
   padding-bottom: 6rem;
   padding-left: 6rem;
+  animation: slideInUp;
+  animation-duration: 10s;
 }
 .boxes {
   display: flex;
@@ -93,13 +99,18 @@ img {
   flex: 1 1 45%;
   padding: 0 0 10px 0px;
 }
-.box h3{
+.box h3 {
   padding-bottom: 10px;
 }
 
 .box-img {
   width: 270px;
   height: 300px;
+}
+.box-inf img:hover {
+  background: white;
+  transition-property: background;
+  transition-duration: 1s;
 }
 
 .news {
@@ -129,7 +140,7 @@ img {
   color: white;
 }
 
-.box-inf h3{
+.box-inf h3 {
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -152,6 +163,168 @@ img {
   font-size: 1rem;
   color: rgb(233, 233, 233);
   text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+/* mobile inicio */
+
+@media screen and (max-width: 480px) {
+  * {
+    background-color: rgb(162, 178, 184);
+  }
+  .titulo {
+    font-size: 3rem;
+    padding-top: 0.5rem;
+    padding-left: 3rem;
+    color: #172764;
+    text-shadow: #e7eaf6 0.2em 0.2em 0.3em;
+    text-align: center;
+    animation-name: logoanimacion;
+    animation-duration: 10s;
+  }
+  @keyframes logoanimacion {
+    0% {
+      background: rgb(162, 178, 184);
+    }
+    20% {
+      background: white;
+    }
+    40% {
+      background: rgb(162, 178, 184);
+    }
+    60% {
+      background: white;
+    }
+    80% {
+      background: rgb(162, 178, 184);
+    }
+    90% {
+      background: white;
+    }
+    100% {
+      background: rgb(162, 178, 184);
+    }
+  }
+  .subtitulo {
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
+    padding-left: 3rem;
+    color: #e7eaf6;
+    text-shadow: #172764 0.2em 0.2em 0.3em;
+    text-align: center;
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: wobble;
+    animation-duration: 10s;
+  }
+  .textoprincipal h1 {
+    color: white;
+    text-shadow: rgb(30, 32, 190) 0.1em 0.1em 0.2em;
+    font-size: 4rem;
+    text-align: center;
+    padding-bottom: 3rem;
+    padding-left: 3rem;
+    animation: flipInX;
+    animation-duration: 10s;
+  }
+
+  .boxes {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
+    text-align: center;
+    background: #373638;
+  }
+
+  .box {
+    color: rgb(255, 255, 255);
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    margin: 5px 5px 5px 5px;
+    flex: 1 1 45%;
+    padding: 0 0 5px 0px;
+  }
+  .box h3 {
+    padding-bottom: 5px;
+  }
+
+  .box-img {
+    width: 135px;
+    height: 150px;
+  }
+  .box-img:hover {
+    background: white;
+    transition-property: background;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+  }
+
+  .news {
+    text-align: center;
+  }
+  .mensajecentral {
+    color: #fdfdff;
+    font-size: 1.5rem;
+    padding: 25px 25px;
+    display: flex;
+    justify-content: center;
+  }
+  .mensajecentral h2 {
+    text-shadow: rgb(30, 32, 190) 0.1em 0.1em 0.2em;
+  }
+  .boxes-inf {
+    display: grid;
+    grid-template-rows: auto auto auto;
+  }
+  .box-inf {
+    font-size: 0.7rem;
+    margin: 2px 2px 2px 2px;
+    color: white;
+    padding-bottom: 2rem;
+    background: rgb(162, 178, 184);
+  }
+  .box-inf img:hover {
+    background: white;
+    transition-property: background;
+    transition-duration: 1s;
+  }
+
+  .box-inf h3 {
+    font-size: 1.2rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .box-inf img {
+    width: 85px;
+    height: 100px;
+  }
+  .footer {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
+  }
+  .pie p {
+    font-size: 0.5rem;
+    color: rgb(233, 233, 233);
+    text-shadow: black 0.1em 0.1em 0.2em;
+  }
+  .pie a {
+    font-size: 0.5rem;
+    color: rgb(233, 233, 233);
+    text-shadow: black 0.1em 0.1em 0.2em;
+  }
+  .menuhorizontal ul li {
+    display: inline;
+    padding: 10px 10px;
+    margin: 10px;
+    font-size: 1rem;
+  }
+  .nav a {
+    color: #fdfdff;
+  }
+  .nav a:hover {
+    color: grey;
+  }
 }
 
 /* css productos */
@@ -198,7 +371,7 @@ img {
   background: rgba(17, 63, 103, 0.3);
 }
 
-.boxsale p{
+.boxsale p {
   padding-bottom: 20px;
 }
 
@@ -214,7 +387,7 @@ form {
   margin: 0 auto;
   width: 700px;
   padding: 1rem;
-  border: 1px solid #CCC;
+  border: 1px solid #ccc;
   border-radius: 1rem;
   color: white;
   font-size: 3rem;
@@ -235,20 +408,18 @@ label {
 
 /* CSS DE SOBRE-NOSOTROS */
 
-.contenedorsn{
+.contenedorsn {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-  .fotosn{
-    
-    padding-bottom: 30px;
-    
-  }
+.fotosn {
+  padding-bottom: 30px;
+}
 
-.textosn{
+.textosn {
   font-size: 5rem;
   color: white;
   padding: 30px;
