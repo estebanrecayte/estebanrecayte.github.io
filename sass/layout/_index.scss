@@ -1,0 +1,142 @@
+.header {
+  background-position: center;
+  background-attachment: contain;
+  background-size: cover;
+  display: flex;
+  flex-flow: column nowrap;
+
+  .menu {
+    text-align: center;
+    padding: 0 0 30px 0;
+
+    .titulo {
+      font-size: 5rem;
+      padding-top: 1rem;
+      padding-left: 6rem;
+      color: #172764;
+      text-shadow: #e7eaf6 0.2em 0.2em 0.3em;
+      text-align: justify;
+      animation: flash;
+      animation-duration: 10s;
+    }
+    .subtitulo {
+      font-size: 4rem;
+      padding-bottom: 3rem;
+      padding-left: 6rem;
+      color: #e7eaf6;
+      text-shadow: #172764 0.2em 0.2em 0.3em;
+      text-align: justify;
+      animation: flash;
+      animation-duration: 10s;
+    }
+    .menuhorizontal ul li {
+      display: inline;
+      padding: 15px 50px;
+      margin: 50px;
+      font-size: 2.2rem;
+    }
+    .nav a {
+      color: #fdfdff;
+    }
+    .nav a:hover {
+      color: grey;
+    }
+  }
+}
+
+.textoprincipal h1 {
+  color: white;
+  text-shadow: rgb(30, 32, 190) 0.1em 0.1em 0.2em;
+  font-size: 8rem;
+  text-align: justify;
+  padding-bottom: 6rem;
+  padding-left: 6rem;
+  animation: slideInUp;
+  animation-duration: 10s;
+}
+.boxes {
+  display: flex;
+  text-align: center;
+  background: #373638;
+}
+
+.box {
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  margin: 10px 10px 10px 10px;
+  flex: 1 1 45%;
+  padding: 0 0 10px 0px;
+}
+.box h3 {
+  padding-bottom: 10px;
+}
+.box img:hover {
+  background: white;
+  transition-property: background;
+  transition-duration: 1s;
+}
+
+.box-img {
+  width: 270px;
+  height: 300px;
+}
+.box-inf img:hover {
+  background: white;
+  transition-property: background;
+  transition-duration: 1s;
+}
+
+.news {
+  text-align: center;
+
+  .mensajecentral {
+    color: #fdfdff;
+    font-size: 3rem;
+    padding: 50px 50px;
+    display: flex;
+    justify-content: center;
+  }
+  .mensajecentral h2 {
+    text-shadow: rgb(30, 32, 190) 0.1em 0.1em 0.2em;
+  }
+  .boxes-inf {
+    display: flex;
+    flex: 2 1 auto;
+    flex-flow: nowrap;
+  }
+  .box-inf {
+    flex: 1 1 40%;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    margin: 5px 5px 5px 5px;
+    background: rgba(17, 63, 103, 0.3);
+    color: white;
+  }
+
+  .box-inf h3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .box-inf img {
+    width: 170px;
+    height: 200px;
+  }
+}
+
+.footer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  .pie p {
+    font-size: 1rem;
+    color: rgb(233, 233, 233);
+    text-shadow: black 0.1em 0.1em 0.2em;
+  }
+  .pie a {
+    font-size: 1rem;
+    color: rgb(233, 233, 233);
+    text-shadow: black 0.1em 0.1em 0.2em;
+  }
+}

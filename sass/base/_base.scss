@@ -1,0 +1,21 @@
+html {
+  font-size: 62.5%;
+}
+a {
+  text-decoration: none;
+  color: rgb(251, 253, 255);
+}
+a:hover {
+  color: rgb(201, 210, 70);
+}
+.padre {
+  display: flex;
+  flex-flow: column nowrap;
+  background: #141621;
+}
+body {
+  background: #141621;
+}
+img {
+  max-width: 100%;
+}
